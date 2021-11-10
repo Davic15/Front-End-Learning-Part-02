@@ -1,8 +1,10 @@
-//document.getElementById("count-el").innerText = 51;
-
 let count = 0;
-console.log(count);
+let countEl = document.getElementById('count-el');
 
-let myAge = 32;
-console.log(myAge);
+function increment() {
+    countEl.innerHTML = count += 1;
+}
 
+function save() {
+    console.log(count);
+}
