@@ -11,14 +11,53 @@ h1 {
     padding: 25px 0;
 }
 
+a { 
+    color: #281B2D;
+}
+a:hover {
+    color: #fff;
+}
+
 .subheading {
     background-color: #281B2D;
     color: #FCD801;
     font-size: 48px;
     padding: 20px;
     border-bottom: 5px solid #00C54C;
+    margin-top: 0;
 }
 
-.subtext {
+.white-text {
     color: #FFF;
 }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.columns {
+    display: flex;
+}
+
+.main-content {
+    width: 65%;
+    margin-right: 5%;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #9AE84F;
+    padding: 15px;
+    box-shadow: 10px 10px #00C54C;
+}
+
+.source {
+    font-size: 12px;
+}
+
+.col-right {
+    margin-left: 25px;
+}
+
