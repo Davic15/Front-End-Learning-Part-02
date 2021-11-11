@@ -13,7 +13,6 @@ let player = {
 
 let playerEl = document.getElementById("player-el");
 playerEl.textContent = player.name + ": $" + player.chips;
-//let sumEl = document.querySelector("#sum-el");
 
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 12) + 1;
