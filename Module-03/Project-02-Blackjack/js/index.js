@@ -6,6 +6,13 @@ let message = "";
 let mesageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
+let player = {
+    name: "David",
+    chips: 145
+};
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
 //let sumEl = document.querySelector("#sum-el");
 
 function getRandomCard() {
@@ -47,8 +54,10 @@ function renderGame() {
 }
 
 function newCard() {
-    let card = getRandomCard();
-    sum += card;
-    cards.push(card);
-    renderGame();
+    if (isAlive === true && hasBlackjack === false){
+        let card = getRandomCard();
+        sum += card;
+        cards.push(card);
+        renderGame();
+    }
 }
