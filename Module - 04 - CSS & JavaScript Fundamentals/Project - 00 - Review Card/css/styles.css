@@ -23,3 +23,24 @@ p {
     margin-bottom: 0;
 }
 
+.accent-color {
+    color: #FFE600;
+}
+
+a:link, a:visited {
+    color: #FEE600;
+}
+
+/* Moving with tab, disable people */
+a:focus{
+    color: aquamarine;
+}
+
+a:hover {
+    color: firebrick;
+}
+
+/* Hold left click */
+a:active {
+    color: plum;
+}
