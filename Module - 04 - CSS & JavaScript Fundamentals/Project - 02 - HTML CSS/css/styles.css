@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #2E354F;
+}
+
+h1, h2, strong {
+    font-weight: 900;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #EF5839;
+}
+
+a {
+    color: #EF5839;
+}
+
+a:hover, a:focus {
+    color: #D4B44C;
+}
+
+/* Layout */
+header {
+    background: #2E354F;
+    padding: 45px 0;
+    color: #FFF;
+    width: 620px;
+    margin: 0 auto;
+}
+
+.section-one {
+    width: 620px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
