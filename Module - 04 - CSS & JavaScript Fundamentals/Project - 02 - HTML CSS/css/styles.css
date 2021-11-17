@@ -29,6 +29,34 @@ a:hover, a:focus {
     color: #D4B44C;
 }
 
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.btn-accent {
+    background: #EF5839;
+    color: #FFF;
+}
+
+.btn-accent:hover {
+    color: #2E354F;
+    background: #D4B44C;
+}
+
+.btn-white {
+    background: #FFF;
+    color: #2E354F;
+}
+
+.btn-white:hover {
+    color: #FFF;
+    background: #999;
+}
+
 /* Layout */
 header {
     background: #2E354F;
@@ -38,8 +66,13 @@ header {
     margin: 0 auto;
 }
 
-.section-one {
+section {
     width: 620px;
     margin: 0 auto;
     padding: 45px 0;
+}
+
+.section-two {
+    background: #2E354F;
+    color: #FFF;
 }
