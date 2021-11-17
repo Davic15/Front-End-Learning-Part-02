@@ -62,17 +62,18 @@ header {
     background: #2E354F;
     padding: 45px 0;
     color: #FFF;
-    width: 620px;
-    margin: 0 auto;
 }
 
 section {
-    width: 620px;
-    margin: 0 auto;
     padding: 45px 0;
 }
 
 .section-two {
     background: #2E354F;
     color: #FFF;
+}
+
+.container {
+    width: 620px;
+    margin: 0 auto;
 }
