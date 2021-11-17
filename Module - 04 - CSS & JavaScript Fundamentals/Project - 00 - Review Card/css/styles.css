@@ -18,29 +18,23 @@ p {
     font-size: 18px;
 }
 
-.links {
-    margin-top: 40px;
-    margin-bottom: 0;
+a {
+    color: #FFE600;
+}
+
+.button {
+    background: #FFE600;
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    margin-right: 25px;
 }
 
 .accent-color {
     color: #FFE600;
 }
 
-a:link, a:visited {
-    color: #FEE600;
-}
-
-/* Moving with tab, disable people */
-a:focus{
-    color: aquamarine;
-}
-
-a:hover {
-    color: firebrick;
-}
-
-/* Hold left click */
-a:active {
-    color: plum;
+.links {
+    margin-top: 40px;
+    margin-bottom: 0;
 }
