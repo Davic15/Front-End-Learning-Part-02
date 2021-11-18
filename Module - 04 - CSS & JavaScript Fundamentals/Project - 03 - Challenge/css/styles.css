@@ -10,10 +10,13 @@ body {
     width: 570px;
     margin: 0 auto;
 }
-
 .bold-text {
     display: block;
+}
+
+.bold-text, .name, time {
     font-weight: 900;
+    color: #99D930;
 }
 
 h1 .bold-text {
@@ -31,10 +34,16 @@ h1, h2 {
 
 h1 {
     font-size: 60px;
+    margin-top: 0;
 }
 
 h2 {
     font-size: 42px;
+    margin-top: 0;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -81,4 +90,9 @@ header, section {
 .btn:hover, .btn:focus {
     background-color: #252525;
     color: #FFF;
+}
+
+.inverse .btn:hover, .inverse .btn:focus {
+    background-color: #FFF;
+    color: #252525;
 }
