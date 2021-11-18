@@ -30,3 +30,25 @@ h3 {
     width: 570px;
     margin: 0 auto;
 }
+
+.bold-text {
+    display: block;
+    font-weight: 900;
+}
+
+h1 .bold-text {
+    font-size: 80px;
+}
+
+h2 .bold-text {
+    font-size: 60px;
+}
+
+a {
+    color: #99D930;
+    font-weight: 900;
+}
+
+a:hover, a:focus {
+    color: #131313;
+}
