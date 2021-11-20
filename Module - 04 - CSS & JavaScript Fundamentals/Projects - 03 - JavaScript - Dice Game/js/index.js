@@ -12,7 +12,11 @@ const rollBtn = document.getElementById("rollBtn");
 const resetBtn = document.getElementById("resetBtn");
 const message = document.getElementById("message");
 
-//player1Dice.classList.remove("active");
+function showDisplayButton() {
+    rollBtn.style.display = "none";
+    resetBtn.style.display = "block";
+}
+
 
 rollBtn.addEventListener("click", function() {
     const randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -33,14 +37,31 @@ rollBtn.addEventListener("click", function() {
     }
     if (player1Score >= 20){
         message.textContent = "Player 1 has won! 🥳";
-        rollBtn.style.display = "none";
-        resetBtn.style.display = "block";
+        showDisplayButton()
     }
     else if (player2Score >= 20) {
         message.textContent = "Player 2 has won! 🎉";
-        rollBtn.style.display = "none";
-        resetBtn.style.display = "block";
+        showDisplayButton();
     }
     player1Turn = !player1Turn;
 });
+
+resetBtn.addEventListener("click", function() {
+    reset();
+});
+
+function reset() {
+    message.textContent = "Player 1 Turn";
+    player1Scoreboard.textContent = 0;
+    player2Scoreboard.textContent = 0;
+    player1Dice.textContent = "-";
+    player2Dice.textContent = "-";
+    player1Score = 0;
+    player2Score = 0;
+    player1Turn = true;
+    rollBtn.style.display = "block";
+    resetBtn.style.display = "none";
+    player2Dice.classList.remove("active");
+    player1Dice.classList.add("active");
+}
 
