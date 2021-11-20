@@ -21,5 +21,6 @@ html, body {
 }
 
 .apple {
-    background-color: blue;;
+    background-color: red;
+    border-radius: 10px;
 }
