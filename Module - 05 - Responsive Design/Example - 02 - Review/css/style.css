@@ -26,7 +26,10 @@ a {
     display: inline-block;
     background: #FFE600;
     color: black;
-    padding: 15px 30px;
+    /*
+        em is relative to the font-soze of this element
+    */
+    padding: .5em 1.5em;
     text-align: center;
     text-decoration: none;
     margin-bottom: 50px;
@@ -34,6 +37,14 @@ a {
 
 .button:hover {
     background: orange;
+}
+
+.btn-big {
+    font-size: 1.5rem;
+}
+
+.btn-small {
+    font-size: 0.75rem;
 }
 
 .accent-color {
