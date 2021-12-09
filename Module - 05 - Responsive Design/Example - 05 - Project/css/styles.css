@@ -17,7 +17,7 @@ img {
     display: block;
 }
 
-.img-full {
+.image-full {
     max-height: 300px;
     width: 100%;
     object-fit: cover;
@@ -65,6 +65,7 @@ strong {
     color: #1792d2;
     font-size: .75rem;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .article-title {
@@ -80,6 +81,7 @@ strong {
     color: #1792d2;
     text-decoration: none;
     font-weight: 700;
+    text-transform: lowercase;
 }
 
 .article-read-more:hover,
@@ -92,7 +94,8 @@ strong {
     margin: 2em 0;
 }
 
-.widget-title, .widget-recent-post-title {
+.widget-title,
+.widget-recent-post-title {
     font-size: 1rem;
     line-height: 1.4;
 }
@@ -105,6 +108,7 @@ strong {
 .widget-recent-post-title {
     color: #143774;
 }
+
 
 /* =================
 Layout
@@ -130,13 +134,17 @@ header {
 }
 
 footer {
-    background: #143774;
+    background:#143774;
     color: white;
     text-align: center;
     padding: 3em 0;
 }
 
 @media (min-width: 675px) {
+    header {
+        text-align: left;
+    }
+    
     .container-flex {
         flex-direction: row;
     }
