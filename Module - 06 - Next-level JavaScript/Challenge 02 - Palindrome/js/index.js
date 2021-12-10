@@ -1,11 +1,7 @@
 function caseInsensitivePalindrome(str) {
     let string = str.split("").reverse().join("").toLowerCase();
 
-    if (string === str.toLowerCase()) {
-        return true;
-    } else {
-        return false;
-    }
+    return string === str.toLowerCase();
 }
 
 
