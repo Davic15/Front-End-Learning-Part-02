@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <title>Challenge 02 - BlogSpace</title>
     </head>
     <body>
-        <div>
-            <button class="box" value="one">One</button>
-            <button class="box" value="two">Two</button>
+        <nav>
+            <h3>BlogSpace</h3>
+        </nav>
+        <form action="/post">
+            <label for="post-title">Title</label><br>
+            <input type="text" id="post-title" name="text-input"><br>
+            <label for="post-body">Body</label><br>
+            <textarea id="post-body"></textarea><br>
+            <button id="btn">Post</button>
+        </form>
+
+        <div class="container">
         </div>
         <script src="js/index.js"></script>
     </body>
