@@ -1,7 +1,7 @@
 const divEl = document.querySelector(".container");
 const formEl = document.getElementById("new-post");
-
 let htmlFragment = "";
+
 fetch("https://apis.scrimba.com/jsonplaceholder/posts", {method: "GET"})
     .then(res => res.json())
     .then(data => {
@@ -35,5 +35,14 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts", {method: "GET"})
 
         fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(post => {
+            htmlFragment = `
+                <h3>${post.title}</h3>
+                <p>${post.body}</p>
+                <hr />
+                ${divEl.innerHTML}
+            `;
+            divEl.innerHTML = htmlFragment;
+
+        })
     })
