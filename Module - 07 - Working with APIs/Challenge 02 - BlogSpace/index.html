@@ -62,10 +62,25 @@
         patter to provide a standard way for clients and servers to communicate
     Principles of Rest
         Client and Server separation
-        REST idea
-        The client requests (GET data in JSON), and the client handle the render of the page, we only get data
-        The server response (data in JSON)
-        Any other device as smart watch can request json and render by itself
+            REST idea
+            The client requests (GET data in JSON), and the client handle the render of the page, we only get data
+            The server response (data in JSON)
+            Any other device as smart watch can request json and render by itself
+        Statelessness
+            The client requests data and the server doesn't remember the request or the pc that comes from.
+        Accessing Resources
+            Example 
+            BaseURL: https://mikesbikes.com/api
+                endPoints are nouns only, verbs are just for methods
+                endPoints: /bikes (GET, POST) 
+                endPoints: /bikes/:id = /bikes/123 (GET, PUT, DELETE)
+            Nested Resources
+                endPoints: /bikes/:id/reviews (e.g. /bikes/123/reviews)
+    Query Strings (Parameters?)
+        A way to filter results
+        BaseURL: https://mikesbikes.com/api
+        endPoints: /bikes
+        endPoints: /bikes?type=mountain     {type: "mountain"}
+        endPoints: /bikes?type=road&brand="trek"    {type: "road", brand: "trek"}
 
-    REST API Design
 -->
