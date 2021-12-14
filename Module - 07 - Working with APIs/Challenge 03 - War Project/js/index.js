@@ -41,8 +41,6 @@ drawCardBtn.addEventListener("click", () => {
         }
     });
 });
-
-
             
 function determineCardWinner(card1, card2) {
     const valueOption = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING", "ACE"];
