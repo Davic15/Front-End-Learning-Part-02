@@ -16,16 +16,19 @@ function getPokemonHtml(aPokemon) {
             <div class="a-pokemon-stat">Attack: ${aPokemon.base.Attack}</div>
             <div class="a-pokemon-stat">Defense: ${aPokemon.base.Defense}</div>
             <div class="a-pokemon-stat">Speed: ${aPokemon.base.Speed}</div>
+
+            <div class="a-pokemon-alt-name">${aPokemon.name.japanese}</div>
+            <div class="a-pokemon-alt-name">${aPokemon.name.chinese}</div>
+            <div class="a-pokemon-alt-name">${aPokemon.name.french}</div>
         </div>
     `;
 }
 
-getAllPokemon().then(allPokemon => {
-    console.log(allPokemon[0]);
-    let samplePokemon = allPokemon[0]
-    document.body.innerHTML = `
-        <div class="my-pokedex">
-            ${allPokemon.map(aPokemon => getPokemonHtml(aPokemon)).join('')}
-        </div>
-    `;
-});
+function displayPokedex(allPokemon) {
+    console.log(allPokemon[0])
+    document.body.innerHTML = `<div class="my-pokedex">
+        ${allPokemon.map(getPokemonHtml).join('')}
+    </div>`
+}
+
+getAllPokemon().then(displayPokedex)
