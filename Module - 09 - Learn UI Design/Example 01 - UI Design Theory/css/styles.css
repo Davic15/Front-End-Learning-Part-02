@@ -171,7 +171,7 @@ a {
 }
 */
 
-
+/* Example 04
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
 html, body {
@@ -241,4 +241,131 @@ h1 {
 p.code {
     font-size: 1.5em;
     font-weight: bold;
+}
+*/
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,700|Seymour+One&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+h1, p {
+    font-size: 1em;
+}
+h1 {
+    margin: 2em 0 -.2em;
+    font-family: 'Seymour One', sans-serif;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1em;
+    margin-top: 2em;
+}
+.card {
+    background-color: #eeeeee;
+    padding: 1.7em;
+}
+blockquote {
+    margin: 0;
+}
+span {
+    width: 70px;
+    height: 70px;
+    display: block;
+    background: gray;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+cite {
+    font-style: normal;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4em;
+}
+
+h1, p, blockquote p, cite {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+blockquote p {
+    line-height: 1.5em;
+}
+
+cite {
+    font-size: .7em;
+    font-weight: bold;
+    color: #373737;
+}*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #1F0252;
+    color: white;
+    font-family: 'Nunito';
+}
+
+header {
+    background: #7141C4;
+    height: 2em;
+}
+
+.container {
+    padding: 3em 2em 2em;
+    background: #811573;
+}
+h1 {
+    margin: 0;
+    color: #617BFF;
+}
+a {
+    background: #157A81;
+    padding: .5em 2.3em;
+    display: inline-block;
+    color: #3C1581;
+    text-decoration: none;
+    border-radius: 1em;
+    font-weight: bold;
+    font-size: .9em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+p {
+    color: #FF6EEC;
+}
+
+footer {
+    height: 2em;
+    background: #1F0252;
+}
+
+.container {
+    background: #3C1581;
+}
+
+h1, p {
+    color: white;
+}
+
+a {
+    background: #FEED00;
 }
