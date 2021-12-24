@@ -1,5 +1,5 @@
 
-/*
+/* Example 01
 html, body {
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ p {
     line-height: 1.5em;
 }*/
 
-
+/* Example 02
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 html, body {
@@ -94,7 +94,6 @@ a.cta {
     margin-top: 1.5em;
 }
 
-/* Show Column: */
 
 .container {
     border-left: 1px solid rgba(255,255,255,1);
@@ -105,4 +104,141 @@ a.cta {
 h1 { margin-left: 0; }
 a.cta { transform: none; }
 a.logo { text-align: left; }
+*/
 
+
+/* Example 03
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat';
+}
+.container {
+    padding: 3em 2em;
+}
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+header::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('../img/asset1.jpg');
+    background-position: 0% 20%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #002A4E;
+}
+p {
+    color: rgba(0,0,0,.3);
+    margin-top: .5em;
+    font-size: .9em;
+    font-weight: bold;
+}
+a {
+    background: #CCCCCC;
+    padding: .8em;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: .8em;
+    border-radius: .4em;
+    margin-top: 1.5em;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+p {
+    color: #002A4E;
+}
+
+a {
+    background: #006BC6;
+    color: white
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+body {
+    background: #EBF1F3;
+    height: 100vh;
+}
+
+.container {
+    padding: 2em;
+}
+h1 {
+    font-size: 1.2em;
+    margin: .3em 0;
+}
+p.subheading {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 1em;
+}
+.color {
+    border: 1px solid #B8C8CE;
+    padding: 1em 1em 0;
+}
+span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+}
+.color:nth-of-type(1) span { background: purple; }
+.color:nth-of-type(2) span { background: goldenrod; }
+.color:nth-of-type(3) span { background: magenta; }
+.color:nth-of-type(4) span { background: blue; }
+.color:nth-of-type(5) span { background: darkblue; }
+.color:nth-of-type(6) span { background: lightseagreen; }
+
+p.code {
+    font-size: .8em;
+    margin-bottom: 0;
+    margin-top: .8em;
+}
+p.desc {
+    margin-bottom: 0;
+    background: #DAE7EB;
+    margin: 1em -1em 0;
+    padding: 1em;
+}
+
+.color-container {
+    grid-template-columns: repeat(3, auto);
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+p.code {
+    font-size: 1.5em;
+    font-weight: bold;
+}
