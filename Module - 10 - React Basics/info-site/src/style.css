@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: Inter, sans-serif;
+    font-family: "Inter", sans-serif;
     height: 100vh;
     background-color: #282D35;
 }
@@ -41,6 +41,9 @@ nav {
 main {
     padding: 57px 27px;
     color: white;
+    background-image: url("../src/images/react-icon-large.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
 }
 
 .main--title {
