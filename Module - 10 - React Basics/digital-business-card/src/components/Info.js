@@ -3,14 +3,10 @@ import imageProfile from '../images/dev-david-01.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import About from './About';
-import Interests from './Interests';
-
-
 
 export default function Info() {
     return(
-        <div className="container">
+        <div>
             <img src={imageProfile} alt="my profile" />
             <h2>Franklin Macias</h2>
             <p>Frontend Developer</p>
@@ -19,8 +15,6 @@ export default function Info() {
                 <button className="btn email"><FontAwesomeIcon icon={faEnvelope} className="icon"/> Email</button>
                 <button className="btn link"><FontAwesomeIcon icon={faLinkedin} className="icon"/>Linkedin</button>
             </div>
-            <About />
-            <Interests />
         </div>
     );
 }

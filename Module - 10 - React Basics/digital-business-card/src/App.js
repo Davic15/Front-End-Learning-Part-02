@@ -1,10 +1,10 @@
 import React from 'react';
-import Info from './components/Info';
+import Main from './components/Main';
 
 export default function App() {
     return (
         <div>
-            <Info />
+            <Main />
         </div>
     );
 }
