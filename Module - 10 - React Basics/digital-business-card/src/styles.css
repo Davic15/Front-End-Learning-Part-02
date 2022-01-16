@@ -60,3 +60,14 @@ a {
     background-color: rgb(99, 163, 236);
     color: white;
 }
+
+.about-title, .interests-title {
+    margin: 1rem 2rem .5rem 2rem;
+    text-align: left;
+}
+
+.about-text, .interests-text {
+    color: white;
+    margin: 0 2rem 1rem 2rem;
+    text-align: left;
+}

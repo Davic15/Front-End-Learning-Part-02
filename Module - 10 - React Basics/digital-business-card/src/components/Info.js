@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import About from './About';
+import Interests from './Interests';
 
 
 
@@ -19,6 +20,7 @@ export default function Info() {
                 <button className="btn link"><FontAwesomeIcon icon={faLinkedin} className="icon"/>Linkedin</button>
             </div>
             <About />
+            <Interests />
         </div>
     );
 }
