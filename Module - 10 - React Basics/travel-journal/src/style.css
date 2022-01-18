@@ -1,7 +1,13 @@
 body {
     margin: 0;
-    font-family: 'Dongle', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #2B283A;
+}
+
+/* App component */
+.container {
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 /* Navbar component */
@@ -24,4 +30,58 @@ body {
     margin: 0;
     color: white;
     font-size: 2.5rem;
+}
+
+/* Card component */
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card--image {
+    margin: 2rem 0;
+    width: 200px;
+    height: 300px;
+}
+.card--information_icon {
+    width: 15px;
+    height: 15px;
+    margin: .5rem .1rem 0 0;
+}
+
+.card--image__place {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+.card--information {
+    max-width: 500px;
+    margin: auto 0;
+}
+
+.card--information__location {
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline;
+    margin-right: 25px;
+    margin-top: .2rem;
+    margin-bottom: 0;
+}
+
+.card--information__link {
+    font-size: .75rem;
+    display: inline;
+    color: #918E9B;
+}
+
+.card--information__link:hover, .card--information__link:focus {
+    color: #2B283A;
+}
+
+.card--information__duration {
+    font-weight: 700;
 }
