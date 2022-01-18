@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    color: #2B283A;
+}
+
+/* Navbar component */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #F55A5A;
+    padding: 1.5rem;
+}
+
+.nav--logo {
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    margin-right: 5px;
+    filter: brightness(0) invert(1);
+}
+
+.nav--phrase {
+    margin: 0;
+    color: white;
+    font-size: 2.5rem;
+}
