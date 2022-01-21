@@ -5,7 +5,7 @@ export default function Meme() {
     //const [memeImage, setMemeImage] = React.useState("https://i.imgflip.com/30b1gx.jpg");
     const [meme, setMeme] = React.useState({
         topText: "",
-        bottonText: "",
+        bottomText: "",
         randomImage: "http://i.imgflip.com/1bij.jpg"
     });
     const [allMemeImage, setAllMemeImages] = React.useState(memesData)
@@ -19,17 +19,42 @@ export default function Meme() {
             randomImage: url
         }));
     }
+
+    function handleChange(event) {
+        const {name, value} = event.target;
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            [name]: value
+        }))
+    }
+
     return(
         <main>
             <div className="form">
-                <input className="form--input" type="text" placeholder="Top text"></input>
-                <input className="form--input" type="text" placeholder="Botton text"></input>
-                <button className="form--button" onClick={getMemeImage}>Get a new meme image 🖼</button>
+                <input 
+                    className="form--input" 
+                    type="text" 
+                    placeholder="Top text"
+                    name="topText"
+                    value={meme.topText}
+                    onChange={handleChange}
+                />
+                <input 
+                    className="form--input" 
+                    type="text" 
+                    placeholder="Bottom text"
+                    name="bottomText"
+                    value={meme.bottomText}
+                    onChange={handleChange}
+                />
+                <button 
+                    className="form--button" 
+                    onClick={getMemeImage}>Get a new meme image 🖼</button>
             </div>
             <div className="meme">
                 <img src={meme.randomImage} className="meme--image" alt="new random meme"/>
-                <h2 className="meme--text top">One does not simply</h2>
-                <h2 className="meme--text bottom">Walk into Mordor</h2>
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
         </main>
     );
